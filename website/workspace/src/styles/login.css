@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* Use relative path from CSS file to image */
+    background-image: url("../styles/b1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    background-color: #22222255; /* semi-transparent dark overlay */
+    padding: 30px;
+    border-radius: 20px;
+    /* Dim blue glow with alternating intensity */
+    box-shadow:
+        0 0 10px 2px #007bff55,   /* dim blue glow */
+        0 0 20px 4px #007bff22,   /* even dimmer blue glow */
+        0 0 30px 6px #007bff11;   /* faint blue glow */
+    width: 300px;
+    /* Blur effect (if needed) */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #fff; /* Make heading white */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 94%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 50%;         /* Smaller width */
+    padding: 10px;
+    background-color: #001a1b;
+    color: #fff;        /* Ensure button text is white */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;     /* So margin auto centers it */
+    margin: 0 auto;     /* Center the button horizontally */
+}
+
+button:hover {
+    background-color: #2b2a2a;
+}
+
+/* Make labels white */
+label {
+    color: #fff;
+}

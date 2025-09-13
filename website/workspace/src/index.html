@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>Login</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <!-- Login form container -->
+    <div class="login-container">
+        <!-- Login form -->
+        <form class="login-form">
+            <!-- Form heading -->
+            <h2>Welcome Back</h2>
+            <!-- Username input field -->
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <!-- Password input field -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <!-- Submit button -->
+            <button type="submit" id="loginBtn">Login</button>
+        </form>
+    </div>
+    <!-- Link to external JavaScript file for form logic -->
+    <script src="scripts/login.js"></script>
+    <script>
+    // Prevent default form submission and redirect to web1.html on login button click
+    document.querySelector('.login-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        window.location.href = "web1.html";
+    });
+    </script>
+</body>
+</html>
