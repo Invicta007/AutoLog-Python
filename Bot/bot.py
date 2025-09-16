@@ -21,14 +21,12 @@ def startBot(username, password, url):
         driver.find_element(By.ID, "username").send_keys(username)
         driver.find_element(By.ID, "password").send_keys(password)
         driver.find_element(By.ID, "loginBtn").click()
-        driver.find_element(By.ID, "email").send_keys(username)
-        driver.find_element(By.ID, "pass").send_keys(password)
-        driver.find_element(By.ID, "u_0_5_gO").click()
+
     except Exception as e:
         print("Error during login:", e)
 
 # --- Driver code ---
 username = "9656427794"
 password = "Gocct*123"
-url = "https://www.facebook.com/"
+url = "http://127.0.0.1:5500/website/workspace/src/index.html"
 startBot(username, password, url)
